@@ -2,62 +2,35 @@ import { v4 as uuidv4 } from 'uuid';
 import { ReactComponent as Github } from '../assets/icon-github.svg';
 import { ReactComponent as FrontEndMentor } from '../assets/icon-frontend-mentor.svg';
 import { ReactComponent as LinkedIn } from '../assets/icon-linkedin.svg';
-import { ReactComponent as Twitter } from '../assets/icon-twitter.svg';
-import smallProject1 from '../assets/thumbnail-project-1-small.webp';
-import largeProject1 from '../assets/thumbnail-project-1-large.webp';
-import smallProject2 from '../assets/thumbnail-project-2-small.webp';
-import largeProject2 from '../assets/thumbnail-project-2-large.webp';
-import smallProject3 from '../assets/thumbnail-project-3-small.webp';
-import largeProject3 from '../assets/thumbnail-project-3-large.webp';
-import smallProject4 from '../assets/thumbnail-project-4-small.webp';
-import largeProject4 from '../assets/thumbnail-project-4-large.webp';
-import smallProject5 from '../assets/thumbnail-project-5-small.webp';
-import largeProject5 from '../assets/thumbnail-project-5-large.webp';
-import smallProject6 from '../assets/thumbnail-project-6-small.webp';
-import largeProject6 from '../assets/thumbnail-project-6-large.webp';
 
 export const SOCIAL_MEDIA = [
     {
         id: uuidv4(),
         svg: Github,
-        // href: '#',
+        href: 'https://github.com/mgalvizo',
     },
     {
         id: uuidv4(),
         svg: FrontEndMentor,
-        // href: '#',
+        href: 'https://www.frontendmentor.io/profile/mgalvizo',
     },
     {
         id: uuidv4(),
         svg: LinkedIn,
-        // href: '#',
-    },
-    {
-        id: uuidv4(),
-        svg: Twitter,
-        // href: '#',
+        href: 'https://www.linkedin.com/in/miguelangelgarciaalvizo/',
     },
 ];
 
 export const SKILLS = [
-    { id: uuidv4(), skill: 'HTML', experience: '4 Years Experience' },
-    { id: uuidv4(), skill: 'CSS', experience: '4 Years Experience' },
-    { id: uuidv4(), skill: 'JavaScript', experience: '4 Years Experience' },
-    { id: uuidv4(), skill: 'Accessibility', experience: '4 Years Experience' },
-    { id: uuidv4(), skill: 'React', experience: '3 Years Experience' },
-    { id: uuidv4(), skill: 'Sass', experience: '3 Years Experience' },
+    { id: uuidv4(), skill: 'HTML', experience: '6 Years Experience' },
+    { id: uuidv4(), skill: 'CSS', experience: '6 Years Experience' },
+    { id: uuidv4(), skill: 'SASS', experience: '6 Years Experience' },
+    { id: uuidv4(), skill: 'JavaScript', experience: '3 Years Experience' },
+    { id: uuidv4(), skill: 'React', experience: '1 Years Experience' },
+    { id: uuidv4(), skill: 'Accessibility', experience: '3 Years Experience' },
 ];
 
 export const PROJECTS = [
-    {
-        id: uuidv4(),
-        title: 'Design Portfolio',
-        skills: [
-            { id: uuidv4(), projectSkill: 'HTML' },
-            { id: uuidv4(), projectSkill: 'CSS' },
-        ],
-        image: { smallSrc: smallProject1, largeSrc: largeProject1 },
-    },
     {
         id: uuidv4(),
         title: 'E-Learning Landing Page',
@@ -65,47 +38,81 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
         ],
-        image: { smallSrc: smallProject2, largeSrc: largeProject2 },
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project: 'https://mgalvizo.github.io/skilled-e-learning/',
+            code: 'https://github.com/mgalvizo/skilled-e-learning',
+        },
     },
     {
         id: uuidv4(),
-        title: 'Todo Web App',
+        title: 'Equalizer Landing Page',
+        skills: [
+            { id: uuidv4(), projectSkill: 'HTML' },
+            { id: uuidv4(), projectSkill: 'CSS' },
+        ],
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project: 'https://mgalvizo.github.io/equalizer-landing-page/',
+            code: 'https://github.com/mgalvizo/equalizer-landing-page',
+        },
+    },
+    {
+        id: uuidv4(),
+        title: 'Body Mass Index Calculator',
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: smallProject3, largeSrc: largeProject3 },
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project: 'https://mgalvizo.github.io/bmi-calculator/',
+            code: 'https://github.com/mgalvizo/bmi-calculator',
+        },
     },
     {
         id: uuidv4(),
-        title: 'Entertainment Web App',
+        title: 'GitHub User Search App',
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: smallProject4, largeSrc: largeProject4 },
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project: 'https://mgalvizo.github.io/github-user-search-app/',
+            code: 'https://github.com/mgalvizo/github-user-search-app',
+        },
     },
     {
         id: uuidv4(),
-        title: 'Memory Game',
+        title: 'Clock App',
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: smallProject5, largeSrc: largeProject5 },
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project: 'https://mgalvizo.github.io/clock-app/',
+            code: 'https://github.com/mgalvizo/clock-app',
+        },
     },
     {
         id: uuidv4(),
-        title: 'Art Gallery Showcase',
+        title: 'Planets Fact Site',
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: smallProject6, largeSrc: largeProject6 },
+        image: { smallSrc: '', largeSrc: '' },
+        href: {
+            project:
+                'https://mgalvizo.github.io/planets-fact-site/#/planets/earth/overview',
+            code: 'https://github.com/mgalvizo/planets-fact-site',
+        },
     },
 ];
 

@@ -14,6 +14,7 @@ type Project = {
     title: string;
     skills: Skill[];
     image: { smallSrc: string; largeSrc: string };
+    href: { project: string; code: string };
 };
 
 interface ProjectItemProps {
@@ -24,7 +25,7 @@ interface ProjectItemProps {
 const ProjectItem = ({ project }: ProjectItemProps) => {
     const { isSmallScreen } = usePortfolio();
 
-    const { title, skills, image } = project;
+    const { title, skills, image, href } = project;
 
     return (
         <StyledProjectItem>
@@ -44,8 +45,8 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
                 </picture>
                 {!isSmallScreen && (
                     <div className="overlay__container">
-                        <Link href="#">View Project</Link>
-                        <Link href="#">View Code</Link>
+                        <Link href={href.project}>View Project</Link>
+                        <Link href={href.code}>View Code</Link>
                     </div>
                 )}
             </div>
@@ -57,8 +58,8 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
             </div>
             {isSmallScreen && (
                 <div className="links__container">
-                    <Link href="#">View Project</Link>
-                    <Link href="#">View Code</Link>
+                    <Link href={href.project}>View Project</Link>
+                    <Link href={href.code}>View Code</Link>
                 </div>
             )}
         </StyledProjectItem>

@@ -7,7 +7,11 @@ interface LinkProps {
 }
 
 const Link = ({ children, href }: LinkProps) => {
-    return <StyledLink href={href}>{children}</StyledLink>;
+    return (
+        <StyledLink href={href} target="_blank" rel="noreferrer">
+            {children}
+        </StyledLink>
+    );
 };
 
 export default Link;

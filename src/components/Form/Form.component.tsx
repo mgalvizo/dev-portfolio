@@ -93,7 +93,7 @@ const Form = () => {
             </FormControl>
             <input
                 type="hidden"
-                {...register('owner', { value: 'adamkeyes' })}
+                {...register('owner', { value: 'miguelgarcia' })}
             />
             <Button type="submit" disabled={isSending}>
                 Send Message

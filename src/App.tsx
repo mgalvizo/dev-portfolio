@@ -38,7 +38,7 @@ const App = () => {
                 <div className="component__content">
                     <section className="header">
                         <div className="logo">
-                            <h1>adamkeyes</h1>
+                            <h1>miguelgarcia</h1>
                         </div>
                         <div className="social">
                             <SocialMedia />
@@ -52,12 +52,12 @@ const App = () => {
                             <h2>
                                 Nice to
                                 <br /> meet you! I'm{' '}
-                                <span className="dev-name">Adam Keyes</span>.
+                                <span className="dev-name">Miguel Garcia</span>.
                             </h2>
                             <p>
-                                Based in the UK, I'm a front-end developer
-                                passionate about building accessible web apps
-                                that users love.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ab velit corporis architecto?
+                                Dolorum quos consectetur aliquid totam expedita.
                             </p>
                             <Button onClick={handleClick}>Contact Me</Button>
                         </div>
@@ -95,7 +95,7 @@ const App = () => {
                     </section>
                     <section className="footer">
                         <div className="logo">
-                            <h2>adamkeyes</h2>
+                            <h2>miguelgarcia</h2>
                         </div>
                         <div className="social">
                             <SocialMedia />

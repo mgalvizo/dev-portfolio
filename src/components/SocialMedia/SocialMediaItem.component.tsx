@@ -17,7 +17,11 @@ const SocialMediaItem = ({ item }: SocialMediaItemProps) => {
 
     return (
         <StyledSocialMediaItem>
-            {href && <a href={href}>{svg({})}</a>}
+            {href && (
+                <a href={href} target="__blank" rel="noreferrer">
+                    {svg({})}
+                </a>
+            )}
             {!href && <span>{svg({})}</span>}
         </StyledSocialMediaItem>
     );

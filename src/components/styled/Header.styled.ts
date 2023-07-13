@@ -144,7 +144,7 @@ const StyledHeader = styled.header`
             max-width: none;
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 1fr 240px;
+            grid-template-columns: 1fr 220px;
             align-items: end;
         }
 
@@ -218,7 +218,7 @@ const StyledHeader = styled.header`
         }
 
         .main__image {
-            grid-template-columns: 1fr 320px;
+            grid-template-columns: 1fr 400px;
             align-items: center;
         }
 
