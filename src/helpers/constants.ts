@@ -2,6 +2,18 @@ import { v4 as uuidv4 } from 'uuid';
 import { ReactComponent as Github } from '../assets/icon-github.svg';
 import { ReactComponent as FrontEndMentor } from '../assets/icon-frontend-mentor.svg';
 import { ReactComponent as LinkedIn } from '../assets/icon-linkedin.svg';
+import ELearningLandingPageSmall from '../assets/e-learning-landing-page-small.webp';
+import ELearningLandingPageLarge from '../assets/e-learning-landing-page-large.webp';
+import EqualizerLandingPageSmall from '../assets/equalizer-lading-page-small.webp';
+import EqualizerLandingPageLarge from '../assets/equalizer-lading-page-large.webp';
+import BmiCalculatorSmall from '../assets/bmi-calculator-small.webp';
+import BmiCalculatorLarge from '../assets/bmi-calculator-large.webp';
+import GitHubUserSearchAppSmall from '../assets/github-user-search-app-small.webp';
+import GitHubUserSearchAppLarge from '../assets/github-user-search-app-large.webp';
+import ClockAppSmall from '../assets/clock-app-small.webp';
+import ClockAppLarge from '../assets/clock-app-large.webp';
+import PlanetsFactSiteSmall from '../assets/planets-fact-site-small.webp';
+import PlanetsFactSiteLarge from '../assets/planets-fact-site-large.webp';
 
 export const SOCIAL_MEDIA = [
     {
@@ -38,7 +50,10 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: {
+            smallSrc: ELearningLandingPageSmall,
+            largeSrc: ELearningLandingPageLarge,
+        },
         href: {
             project: 'https://mgalvizo.github.io/skilled-e-learning/',
             code: 'https://github.com/mgalvizo/skilled-e-learning',
@@ -51,7 +66,10 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: {
+            smallSrc: EqualizerLandingPageSmall,
+            largeSrc: EqualizerLandingPageLarge,
+        },
         href: {
             project: 'https://mgalvizo.github.io/equalizer-landing-page/',
             code: 'https://github.com/mgalvizo/equalizer-landing-page',
@@ -65,7 +83,7 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: { smallSrc: BmiCalculatorSmall, largeSrc: BmiCalculatorLarge },
         href: {
             project: 'https://mgalvizo.github.io/bmi-calculator/',
             code: 'https://github.com/mgalvizo/bmi-calculator',
@@ -79,7 +97,10 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: {
+            smallSrc: GitHubUserSearchAppSmall,
+            largeSrc: GitHubUserSearchAppLarge,
+        },
         href: {
             project: 'https://mgalvizo.github.io/github-user-search-app/',
             code: 'https://github.com/mgalvizo/github-user-search-app',
@@ -93,7 +114,7 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: { smallSrc: ClockAppSmall, largeSrc: ClockAppLarge },
         href: {
             project: 'https://mgalvizo.github.io/clock-app/',
             code: 'https://github.com/mgalvizo/clock-app',
@@ -107,7 +128,10 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
         ],
-        image: { smallSrc: '', largeSrc: '' },
+        image: {
+            smallSrc: PlanetsFactSiteSmall,
+            largeSrc: PlanetsFactSiteLarge,
+        },
         href: {
             project:
                 'https://mgalvizo.github.io/planets-fact-site/#/planets/earth/overview',
