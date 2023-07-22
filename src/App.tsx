@@ -55,9 +55,14 @@ const App = () => {
                                 <span className="dev-name">Miguel Garcia</span>.
                             </h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Ab velit corporis architecto?
-                                Dolorum quos consectetur aliquid totam expedita.
+                                Engineer with experience specializing in
+                                Front-end Web Development using Responsive Web
+                                Design. Proficient at collaborating with
+                                UX/Design teams to execute the functional
+                                specifications for websites. Capable of
+                                problem-solving, attention to detail, and
+                                continuous learning both self and from other
+                                developers.
                             </p>
                             <Button onClick={handleClick}>Contact Me</Button>
                         </div>

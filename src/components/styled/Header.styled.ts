@@ -181,6 +181,11 @@ const StyledHeader = styled.header`
         .header {
             padding-right: var(--web-padding-xl);
         }
+
+        p {
+            max-width: 550px;
+            margin-bottom: calc(var(--web-margin-xl) * 2);
+        }
     }
 
     // 1232px
@@ -238,6 +243,7 @@ const StyledHeader = styled.header`
         }
 
         p {
+            max-width: 650px;
             margin-bottom: calc(var(--web-margin-xl) * 2);
         }
     }
