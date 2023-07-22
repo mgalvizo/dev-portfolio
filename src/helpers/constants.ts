@@ -14,6 +14,8 @@ import ClockAppSmall from '../assets/clock-app-small.webp';
 import ClockAppLarge from '../assets/clock-app-large.webp';
 import PlanetsFactSiteSmall from '../assets/planets-fact-site-small.webp';
 import PlanetsFactSiteLarge from '../assets/planets-fact-site-large.webp';
+import MultiStepFormSmall from '../assets/multi-step-form-small.webp';
+import MultiStepFormLarge from '../assets/multi-step-form-large.webp';
 
 export const SOCIAL_MEDIA = [
     {
@@ -136,6 +138,24 @@ export const PROJECTS = [
             project:
                 'https://mgalvizo.github.io/planets-fact-site/#/planets/earth/overview',
             code: 'https://github.com/mgalvizo/planets-fact-site',
+        },
+    },
+    {
+        id: uuidv4(),
+        title: 'Multi Step Form',
+        skills: [
+            { id: uuidv4(), projectSkill: 'HTML' },
+            { id: uuidv4(), projectSkill: 'CSS' },
+            { id: uuidv4(), projectSkill: 'JavaScript' },
+        ],
+        image: {
+            smallSrc: MultiStepFormSmall,
+            largeSrc: MultiStepFormLarge,
+        },
+        href: {
+            project:
+                'https://mgalvizo.github.io/multi-step-form/#/personal-info',
+            code: 'https://github.com/mgalvizo/multi-step-form',
         },
     },
 ];
