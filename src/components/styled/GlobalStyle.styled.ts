@@ -140,26 +140,6 @@ h6 {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
-.component {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    .component__container {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        flex-basis: var(--max-design-width);
-    }
-
-    .component__content {
-        flex-basis: var(--max-content-width);
-    }
-}
-
 // 480px
 @media only screen and (min-width: 30em) {}
 
