@@ -11,6 +11,16 @@ import SkillsList from './components/Skills/SkillsList.component';
 import ProjectsList from './components/Projects/ProjectsList.component';
 import Footer from './components/Footer.component';
 import Form from './components/Form/Form.component';
+import {
+    StyledHeaderContent,
+    StyledHeaderLogoAndSocial,
+    StyledHeaderLogoContainer,
+    StyledHeaderSocialContainer,
+    StyledHeaderMainImage,
+    StyledHeaderDevImageContainer,
+    StyledHeaderTaglineAndCTA,
+    StyledHeaderDevName,
+} from './components/styled/Header.styled';
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -35,24 +45,27 @@ const App = () => {
         <QueryClientProvider client={queryClient}>
             <GlobalStyle />
             <Header>
-                <div className="component__content">
-                    <section className="header">
-                        <div className="logo">
+                <StyledHeaderContent>
+                    <StyledHeaderLogoAndSocial>
+                        <StyledHeaderLogoContainer>
                             <h1>miguelgarcia</h1>
-                        </div>
-                        <div className="social">
+                        </StyledHeaderLogoContainer>
+                        <StyledHeaderSocialContainer>
                             <SocialMedia />
-                        </div>
-                    </section>
-                    <section className="main__image">
-                        <div className="dev__image__container">
+                        </StyledHeaderSocialContainer>
+                    </StyledHeaderLogoAndSocial>
+                    <StyledHeaderMainImage>
+                        <StyledHeaderDevImageContainer>
                             <DevImage />
-                        </div>
-                        <div className="tagline-cta">
+                        </StyledHeaderDevImageContainer>
+                        <StyledHeaderTaglineAndCTA>
                             <h2>
                                 Nice to
                                 <br /> meet you! I'm{' '}
-                                <span className="dev-name">Miguel Garcia</span>.
+                                <StyledHeaderDevName>
+                                    Miguel Garcia
+                                </StyledHeaderDevName>
+                                .
                             </h2>
                             <p>
                                 Engineer with experience specializing in
@@ -65,9 +78,9 @@ const App = () => {
                                 developers.
                             </p>
                             <Button onClick={handleClick}>Contact Me</Button>
-                        </div>
-                    </section>
-                </div>
+                        </StyledHeaderTaglineAndCTA>
+                    </StyledHeaderMainImage>
+                </StyledHeaderContent>
             </Header>
             <Main>
                 <div className="component__content">
