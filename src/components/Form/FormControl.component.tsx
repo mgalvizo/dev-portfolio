@@ -1,6 +1,11 @@
 import { JSX } from 'react';
 import { PiWarningCircle } from 'react-icons/pi';
-import StyledFormControl from '../styled/Form/FormControl.styled';
+import {
+    StyledFormControl,
+    StyledFormControlInputContainer,
+    StyledFormControlWarning,
+    StyledFormControlErrorMessage,
+} from '../styled/Form/FormControl.styled';
 
 interface FormControlProps {
     children?: JSX.Element;
@@ -18,16 +23,20 @@ const FormControl = ({
             <label className="visually-hidden" htmlFor={children?.props?.id}>
                 {labelText}
             </label>
-            <div className={`input__container ${errorMessage ? 'error' : ''}`}>
+            <StyledFormControlInputContainer
+                className={errorMessage ? 'error' : ''}
+            >
                 {children}
                 {errorMessage && (
-                    <span className="warning">
+                    <StyledFormControlWarning>
                         <PiWarningCircle />
-                    </span>
+                    </StyledFormControlWarning>
                 )}
-            </div>
+            </StyledFormControlInputContainer>
             {errorMessage && (
-                <span className="errorMessage">{errorMessage}</span>
+                <StyledFormControlErrorMessage>
+                    {errorMessage}
+                </StyledFormControlErrorMessage>
             )}
         </StyledFormControl>
     );

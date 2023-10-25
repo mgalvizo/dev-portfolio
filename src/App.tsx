@@ -26,6 +26,15 @@ import {
     StyledSkillsList,
     StyledProjectsList,
 } from './components/styled/Main.styled';
+import {
+    StyledFooterContent,
+    StyledFooterContactForm,
+    StyledFooterContactFormInstructions,
+    StyledFooterContactFormContainer,
+    StyledFooterLogoAndSocial,
+    StyledFooterLogoContainer,
+    StyledFooterSocialContainer,
+} from './components/styled/Footer.styled';
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -102,29 +111,29 @@ const App = () => {
                 </StyledMainContent>
             </Main>
             <Footer>
-                <div className="component__content">
-                    <section id="contact" className="contact__form">
-                        <div className="form__instructions">
+                <StyledFooterContent>
+                    <StyledFooterContactForm id="contact">
+                        <StyledFooterContactFormInstructions>
                             <h2>Contact</h2>
                             <p>
                                 I would love to hear about your project and how
                                 I could help. Please fill in the form, and I’ll
                                 get back to you as soon as possible.
                             </p>
-                        </div>
-                        <div className="form__container">
+                        </StyledFooterContactFormInstructions>
+                        <StyledFooterContactFormContainer>
                             <Form />
-                        </div>
-                    </section>
-                    <section className="footer">
-                        <div className="logo">
+                        </StyledFooterContactFormContainer>
+                    </StyledFooterContactForm>
+                    <StyledFooterLogoAndSocial>
+                        <StyledFooterLogoContainer>
                             <h2>miguelgarcia</h2>
-                        </div>
-                        <div className="social">
+                        </StyledFooterLogoContainer>
+                        <StyledFooterSocialContainer>
                             <SocialMedia />
-                        </div>
-                    </section>
-                </div>
+                        </StyledFooterSocialContainer>
+                    </StyledFooterLogoAndSocial>
+                </StyledFooterContent>
             </Footer>
             <Toaster
                 position="top-center"

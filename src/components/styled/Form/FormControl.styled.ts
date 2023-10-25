@@ -3,40 +3,6 @@ import styled from 'styled-components';
 const StyledFormControl = styled.div`
     position: relative;
 
-    .input__container {
-        position: relative;
-
-        &.error {
-            input,
-            textarea {
-                border-color: var(--red);
-            }
-        }
-
-        .warning {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translateX(0) translateY(calc(var(--web-margin-m) * -1));
-
-            svg {
-                width: 24px;
-                height: 24px;
-                fill: var(--red);
-            }
-        }
-    }
-
-    .errorMessage {
-        display: block;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        text-align: right;
-        color: var(--red);
-        font-size: 1.2rem;
-    }
-
     input,
     textarea {
         position: relative;
@@ -79,4 +45,43 @@ const StyledFormControl = styled.div`
     }
 `;
 
-export default StyledFormControl;
+const StyledFormControlInputContainer = styled.div`
+    position: relative;
+
+    &.error {
+        input,
+        textarea {
+            border-color: var(--red);
+        }
+    }
+`;
+
+const StyledFormControlWarning = styled.span`
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(0) translateY(calc(var(--web-margin-m) * -1));
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--red);
+    }
+`;
+
+const StyledFormControlErrorMessage = styled.span`
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: right;
+    color: var(--red);
+    font-size: 1.2rem;
+`;
+
+export {
+    StyledFormControl,
+    StyledFormControlInputContainer,
+    StyledFormControlWarning,
+    StyledFormControlErrorMessage,
+};
