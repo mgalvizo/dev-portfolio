@@ -1,5 +1,12 @@
 import { ReactNode } from 'react';
-import StyledProjectItem from '../styled/Projects/ProjectItem.styled';
+import {
+    StyledProjectItem,
+    StyledProjectItemOverlayContainer,
+    StyledProjectItemImageContainer,
+    StyledProjectItemInfo,
+    StyledProjectItemSkills,
+    StyledProjectItemLinksContainer,
+} from '../styled/Projects/ProjectItem.styled';
 import ProjectSkillsList from './ProjectSkillsList.component';
 import Link from '../UI/Link.component';
 import { usePortfolio } from '../../hooks/usePortfolio';
@@ -29,7 +36,7 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
 
     return (
         <StyledProjectItem>
-            <div className="image__container">
+            <StyledProjectItemImageContainer>
                 <picture>
                     <source
                         media="(min-width: 768px)"
@@ -44,23 +51,23 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
                     <img src={image.smallSrc} alt={title} />
                 </picture>
                 {!isSmallScreen && (
-                    <div className="overlay__container">
+                    <StyledProjectItemOverlayContainer>
                         <Link href={href.project}>View Project</Link>
                         <Link href={href.code}>View Code</Link>
-                    </div>
+                    </StyledProjectItemOverlayContainer>
                 )}
-            </div>
-            <div className="project__info">
+            </StyledProjectItemImageContainer>
+            <StyledProjectItemInfo>
                 <h3>{title}</h3>
-                <div className="project__skills">
+                <StyledProjectItemSkills>
                     <ProjectSkillsList skills={skills} />
-                </div>
-            </div>
+                </StyledProjectItemSkills>
+            </StyledProjectItemInfo>
             {isSmallScreen && (
-                <div className="links__container">
+                <StyledProjectItemLinksContainer>
                     <Link href={href.project}>View Project</Link>
                     <Link href={href.code}>View Code</Link>
-                </div>
+                </StyledProjectItemLinksContainer>
             )}
         </StyledProjectItem>
     );

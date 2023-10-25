@@ -11,50 +11,60 @@ const StyledProjectItem = styled.li`
         text-transform: uppercase;
         margin-bottom: var(--web-margin-s);
     }
+`;
 
-    .links__container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: start;
-        align-items: center;
-        gap: var(--web-margin-xl);
-    }
-
-    // 768px
-    @media only screen and (min-width: 48em) {
-    }
-
+const StyledProjectItemOverlayContainer = styled.div`
     // 1232px
     @media only screen and (min-width: 77em) {
-        .image__container {
-            position: relative;
-            cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--web-margin-xs) + var(--web-margin-xl2));
+        background-color: rgba(0, 0, 0, 0.75);
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in-out;
+    }
+`;
 
-            &:hover {
-                .overlay__container {
-                    opacity: 1;
-                }
+const StyledProjectItemImageContainer = styled.div`
+    // 1232px
+    @media only screen and (min-width: 77em) {
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+            ${StyledProjectItemOverlayContainer} {
+                opacity: 1;
             }
-        }
-
-        .overlay__container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            gap: calc(var(--web-margin-xs) + var(--web-margin-xl2));
-            background-color: rgba(0, 0, 0, 0.75);
-            opacity: 0;
-            transition-property: opacity;
-            transition-duration: 0.25s;
-            transition-timing-function: ease-in-out;
         }
     }
 `;
 
-export default StyledProjectItem;
+const StyledProjectItemInfo = styled.div``;
+
+const StyledProjectItemSkills = styled.div``;
+
+const StyledProjectItemLinksContainer = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: var(--web-margin-xl);
+`;
+
+export {
+    StyledProjectItem,
+    StyledProjectItemOverlayContainer,
+    StyledProjectItemImageContainer,
+    StyledProjectItemInfo,
+    StyledProjectItemSkills,
+    StyledProjectItemLinksContainer,
+};
