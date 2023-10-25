@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import StyledMain from './styled/Main.styled';
+import { StyledMain } from './styled/Main.styled';
 
 interface MainProps {
     children?: ReactNode;
 }
 
 const Main = ({ children }: MainProps) => {
-    return <StyledMain className="component">{children}</StyledMain>;
+    return <StyledMain as="main">{children}</StyledMain>;
 };
 
 export default Main;

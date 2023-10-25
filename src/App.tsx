@@ -21,6 +21,11 @@ import {
     StyledHeaderTaglineAndCTA,
     StyledHeaderDevName,
 } from './components/styled/Header.styled';
+import {
+    StyledMainContent,
+    StyledSkillsList,
+    StyledProjectsList,
+} from './components/styled/Main.styled';
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -83,18 +88,18 @@ const App = () => {
                 </StyledHeaderContent>
             </Header>
             <Main>
-                <div className="component__content">
-                    <section className="skills__list">
+                <StyledMainContent>
+                    <StyledSkillsList>
                         <SkillsList />
-                    </section>
-                    <section className="projects__list">
+                    </StyledSkillsList>
+                    <StyledProjectsList>
                         <header>
                             <h2>Projects</h2>
                             <Button onClick={handleClick}>Contact Me</Button>
                         </header>
                         <ProjectsList />
-                    </section>
-                </div>
+                    </StyledProjectsList>
+                </StyledMainContent>
             </Main>
             <Footer>
                 <div className="component__content">
