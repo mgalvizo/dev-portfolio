@@ -75,7 +75,7 @@ const StyledHeaderContent = styled(StyledComponentContent)`
 
     // 1232px
     @media only screen and (min-width: 77em) {
-        padding-bottom: calc(var(--web-padding-xl) * 7);
+        padding-bottom: calc(var(--web-padding-xl) * 5);
 
         &::before {
             transform: translateX(
@@ -167,12 +167,13 @@ const StyledHeaderMainImage = styled.section`
 
     // 1232px
     @media only screen and (min-width: 77em) {
-        grid-template-columns: 1fr 400px;
+        grid-template-columns: 1fr 320px;
         align-items: center;
     }
 `;
 
 const StyledHeaderDevImageContainer = styled.div`
+    margin-bottom: var(--web-margin-xl2);
     // 768px
     @media only screen and (min-width: 48em) {
         order: 2;
@@ -226,6 +227,18 @@ const StyledHeaderTaglineAndCTA = styled.div`
 
         p {
             max-width: 550px;
+            margin-bottom: calc(var(--web-margin-xl) * 2);
+        }
+    }
+
+    // 900px
+    @media only screen and (min-width: 64em) {
+        h2 {
+            max-width: 550px;
+        }
+
+        p {
+            max-width: 600px;
             margin-bottom: calc(var(--web-margin-xl) * 2);
         }
     }
