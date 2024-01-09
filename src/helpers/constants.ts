@@ -42,7 +42,8 @@ export const SKILLS = [
     { id: uuidv4(), skill: 'JavaScript', experience: '3 Years Experience' },
     { id: uuidv4(), skill: 'TypeScript', experience: '1 Year Experience' },
     { id: uuidv4(), skill: 'React', experience: '1 Year Experience' },
-    { id: uuidv4(), skill: 'Accessibility', experience: '3 Years Experience' },
+    { id: uuidv4(), skill: 'Git', experience: '3 Year Experience' },
+    { id: uuidv4(), skill: 'GitHub', experience: '3 Year Experience' },
 ];
 
 export const PROJECTS = [
