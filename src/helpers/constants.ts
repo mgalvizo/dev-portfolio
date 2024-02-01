@@ -36,14 +36,76 @@ export const SOCIAL_MEDIA = [
 ];
 
 export const SKILLS = [
-    { id: uuidv4(), skill: 'HTML', experience: '6 Years Experience' },
-    { id: uuidv4(), skill: 'CSS', experience: '6 Years Experience' },
-    { id: uuidv4(), skill: 'SASS', experience: '6 Years Experience' },
-    { id: uuidv4(), skill: 'JavaScript', experience: '3 Years Experience' },
-    { id: uuidv4(), skill: 'TypeScript', experience: '1 Year Experience' },
-    { id: uuidv4(), skill: 'React', experience: '1 Year Experience' },
-    { id: uuidv4(), skill: 'Git', experience: '3 Year Experience' },
-    { id: uuidv4(), skill: 'GitHub', experience: '3 Year Experience' },
+    {
+        id: uuidv4(),
+        skill: 'HTML',
+        // experience: '6 Years Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'CSS',
+        // experience: '6 Years Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'SASS',
+        // experience: '6 Years Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'JavaScript',
+        // experience: '3 Years Experience',
+    },
+    {
+        id: uuidv4(),
+        skill: 'TypeScript',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'React',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Node',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Express',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Mongoose ODM',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'SQL',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'PostgreSQL',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'MongoDB',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Git',
+        // experience: '3 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'GitHub',
+        // experience: '3 Year Experience'
+    },
 ];
 
 export const PROJECTS = [

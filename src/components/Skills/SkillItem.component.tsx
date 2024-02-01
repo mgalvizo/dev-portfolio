@@ -4,7 +4,7 @@ import StyledSkillItem from '../styled/Skills/SkillItem.styled';
 type Skill = {
     id: string;
     skill: string;
-    experience: string;
+    experience?: string;
 };
 
 interface SkillItemProps {
@@ -18,7 +18,7 @@ const SkillItem = ({ skill }: SkillItemProps) => {
     return (
         <StyledSkillItem>
             <h3>{skillTitle}</h3>
-            <p>{experience}</p>
+            {experience && <p>{experience}</p>}
         </StyledSkillItem>
     );
 };
