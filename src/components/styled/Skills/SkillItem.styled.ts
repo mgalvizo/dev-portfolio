@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const StyledSkillItem = styled.li`
+    text-align: center;
+
     h3 {
         font-size: var(--heading-m-fsz);
         line-height: var(--heading-m-lht);

@@ -22,10 +22,11 @@ import {
 } from './components/styled/Header.styled';
 import {
     StyledMainContent,
-    StyledSkillsList,
+    // StyledSkillsList,
     StyledProjectsList,
 } from './components/styled/Main.styled';
-import SkillsList from './components/Skills/SkillsList.component';
+// import SkillsList from './components/Skills/SkillsList.component';
+import SkillsCarousel from './components/Skills/SkillsCarousel.component';
 import {
     StyledFooterContent,
     StyledFooterContactForm,
@@ -97,9 +98,10 @@ const App = () => {
             </Header>
             <Main>
                 <StyledMainContent>
-                    <StyledSkillsList>
+                    <SkillsCarousel />
+                    {/* <StyledSkillsList>
                         <SkillsList />
-                    </StyledSkillsList>
+                    </StyledSkillsList> */}
                     <StyledProjectsList>
                         <header>
                             <h2>Projects</h2>

@@ -48,6 +48,9 @@ const GlobalStyle = createGlobalStyle`
     --circle-height: 129px;
     --input-height: 43px;
     --textarea--height: 107px;
+    --button-carousel-arrow-sz: 43px;
+    --button-carousel-arrow-bg-color: rgba(255,255,255, 0.5);
+    --button-carousel-arrow-bg-color-hover: rgba(255,255,255, 0.75);
     /* MEDIA */
     --media-min: 20em; /* 320px */
     --media-tablet: 30em; /* 480px */
@@ -140,6 +143,30 @@ h6 {
     clip: rect(1px, 1px, 1px, 1px);
 }
 
+.carousel-container {
+    padding-bottom: var(--web-padding-l);
+}
+
+.react-multiple-carousel__arrow {
+    background-color: var(--button-carousel-arrow-bg-color);
+
+    &:hover {
+        background-color: var(--button-carousel-arrow-bg-color-hover);
+    }
+}
+
+.react-multiple-carousel__arrow--left {
+    left: 0;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: 0;
+}
+
+.react-multi-carousel-dot-list {
+    display: none;
+}
+
 // 480px
 @media only screen and (min-width: 30em) {}
 
@@ -150,6 +177,10 @@ h6 {
 @media only screen and (min-width: 48em) {
     body {
         font-size: var(--body-fsz-l);
+    }
+
+    .react-multi-carousel-dot-list {
+        display: flex;
     }
 }
 

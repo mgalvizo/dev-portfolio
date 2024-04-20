@@ -3,19 +3,19 @@ import Rings from '../../assets/pattern-rings.svg';
 import { StyledComponent, StyledComponentContent } from './UI/Component.styled';
 
 const StyledMain = styled(StyledComponent)`
-    padding-right: var(--web-margin-m);
-    padding-left: var(--web-margin-m);
+    padding-right: var(--web-padding-m);
+    padding-left: var(--web-padding-m);
 
     // 620px
     @media only screen and (min-width: 38.75em) {
-        padding-right: var(--web-margin-l);
-        padding-left: var(--web-margin-l);
+        padding-right: var(--web-padding-l);
+        padding-left: var(--web-padding-l);
     }
 
     // 768px
     @media only screen and (min-width: 48em) {
-        padding-right: var(--web-margin-xl);
-        padding-left: var(--web-margin-xl);
+        padding-right: var(--web-padding-xl);
+        padding-left: var(--web-padding-xl);
     }
 `;
 

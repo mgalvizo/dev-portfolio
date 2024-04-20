@@ -10,13 +10,14 @@ type Skill = {
 interface SkillItemProps {
     children?: ReactNode;
     skill: Skill;
+    as?: string;
 }
 
-const SkillItem = ({ skill }: SkillItemProps) => {
+const SkillItem = ({ skill, as }: SkillItemProps) => {
     const { skill: skillTitle, experience } = skill;
 
     return (
-        <StyledSkillItem>
+        <StyledSkillItem as={as}>
             <h3>{skillTitle}</h3>
             {experience && <p>{experience}</p>}
         </StyledSkillItem>
