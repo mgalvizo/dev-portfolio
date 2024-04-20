@@ -7,7 +7,6 @@ import DevImage from './components/DevImage.component';
 import Button from './components/UI/Button.component';
 import { scrollToSection } from './utils/helpers';
 import Main from './components/Main.component';
-import SkillsList from './components/Skills/SkillsList.component';
 import ProjectsList from './components/Projects/ProjectsList.component';
 import Footer from './components/Footer.component';
 import Form from './components/Form/Form.component';
@@ -26,6 +25,7 @@ import {
     StyledSkillsList,
     StyledProjectsList,
 } from './components/styled/Main.styled';
+import SkillsList from './components/Skills/SkillsList.component';
 import {
     StyledFooterContent,
     StyledFooterContactForm,
@@ -82,14 +82,13 @@ const App = () => {
                                 .
                             </h2>
                             <p>
-                                Engineer with experience specializing in
-                                Front-end Web Development using Responsive Web
-                                Design. Proficient at collaborating with
-                                UX/Design teams to execute the functional
-                                specifications for websites. Capable of
-                                problem-solving, attention to detail, and
-                                continuous learning both self and from other
-                                developers.
+                                Engineer specialized in Front-end Web
+                                Development using Responsive Web Design.
+                                Proficient at collaborating with UX/Design teams
+                                to execute the functional specifications for
+                                websites. Capable of problem-solving, attention
+                                to detail, and continuous learning both self and
+                                from other developers.
                             </p>
                             <Button onClick={handleClick}>Contact Me</Button>
                         </StyledHeaderTaglineAndCTA>

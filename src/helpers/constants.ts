@@ -53,8 +53,18 @@ export const SKILLS = [
     },
     {
         id: uuidv4(),
-        skill: 'JavaScript',
+        skill: 'PHP',
         // experience: '3 Years Experience',
+    },
+    {
+        id: uuidv4(),
+        skill: 'Python',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'JavaScript',
+        // experience: '1 Year Experience'
     },
     {
         id: uuidv4(),
@@ -63,7 +73,17 @@ export const SKILLS = [
     },
     {
         id: uuidv4(),
+        skill: 'jQuery',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
         skill: 'React',
+        // experience: '1 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Next',
         // experience: '1 Year Experience'
     },
     {
@@ -84,17 +104,32 @@ export const SKILLS = [
     {
         id: uuidv4(),
         skill: 'SQL',
-        // experience: '1 Year Experience'
+        // experience: '3 Year Experience'
     },
     {
         id: uuidv4(),
         skill: 'PostgreSQL',
-        // experience: '1 Year Experience'
+        // experience: '3 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'MySQL',
+        // experience: '3 Year Experience'
     },
     {
         id: uuidv4(),
         skill: 'MongoDB',
-        // experience: '1 Year Experience'
+        // experience: '3 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Docker',
+        // experience: '3 Year Experience'
+    },
+    {
+        id: uuidv4(),
+        skill: 'Kubernetes',
+        // experience: '3 Year Experience'
     },
     {
         id: uuidv4(),
@@ -115,6 +150,7 @@ export const PROJECTS = [
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
+            { id: uuidv4(), projectSkill: 'SASS' },
         ],
         image: {
             smallSrc: ELearningLandingPageSmall,
@@ -131,6 +167,7 @@ export const PROJECTS = [
         skills: [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
+            { id: uuidv4(), projectSkill: 'SASS' },
         ],
         image: {
             smallSrc: EqualizerLandingPageSmall,
@@ -148,6 +185,8 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
+            { id: uuidv4(), projectSkill: 'TypeScript' },
+            { id: uuidv4(), projectSkill: 'React' },
         ],
         image: { smallSrc: BmiCalculatorSmall, largeSrc: BmiCalculatorLarge },
         href: {
@@ -162,6 +201,7 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
+            { id: uuidv4(), projectSkill: 'React' },
         ],
         image: {
             smallSrc: GitHubUserSearchAppSmall,
@@ -179,6 +219,8 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
+            { id: uuidv4(), projectSkill: 'TypeScript' },
+            { id: uuidv4(), projectSkill: 'React' },
         ],
         image: { smallSrc: ClockAppSmall, largeSrc: ClockAppLarge },
         href: {
@@ -193,6 +235,8 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
+            { id: uuidv4(), projectSkill: 'TypeScript' },
+            { id: uuidv4(), projectSkill: 'React' },
         ],
         image: {
             smallSrc: PlanetsFactSiteSmall,
@@ -211,6 +255,8 @@ export const PROJECTS = [
             { id: uuidv4(), projectSkill: 'HTML' },
             { id: uuidv4(), projectSkill: 'CSS' },
             { id: uuidv4(), projectSkill: 'JavaScript' },
+            { id: uuidv4(), projectSkill: 'TypeScript' },
+            { id: uuidv4(), projectSkill: 'React' },
         ],
         image: {
             smallSrc: MultiStepFormSmall,
