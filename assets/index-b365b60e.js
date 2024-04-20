@@ -368,6 +368,7 @@ h6 {
 }
 
 .carousel-container {
+    padding-top: var(--web-padding-s);
     padding-bottom: var(--web-padding-l);
 }
 
