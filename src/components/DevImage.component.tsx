@@ -25,7 +25,15 @@ const DevImage = ({ devName }: DevImageProps) => {
                 srcSet={MiguelMobile}
                 type="image/webp"
             />
-            <img src={MiguelMobile} alt={devName} width="348" height="766" />
+            <img
+                src={MiguelMobile}
+                srcSet={`${MiguelMobile} 320w,
+                ${MiguelTablet} 768w,
+                ${MiguelDesktop} 1232w`}
+                alt={devName}
+                width="348"
+                height="766"
+            />
         </StyledDevImage>
     );
 };
