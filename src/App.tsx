@@ -71,7 +71,7 @@ const App = () => {
                     </StyledHeaderLogoAndSocial>
                     <StyledHeaderMainImage>
                         <StyledHeaderDevImageContainer>
-                            <DevImage />
+                            <DevImage devName="Miguel" />
                         </StyledHeaderDevImageContainer>
                         <StyledHeaderTaglineAndCTA>
                             <h2>

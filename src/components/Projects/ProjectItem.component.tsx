@@ -48,7 +48,12 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
                         srcSet={image.smallSrc}
                         type="image/webp"
                     />
-                    <img src={image.smallSrc} alt={title} />
+                    <img
+                        src={image.smallSrc}
+                        alt={title}
+                        width="720"
+                        height="540"
+                    />
                 </picture>
                 {!isSmallScreen && (
                     <StyledProjectItemOverlayContainer>

@@ -1,27 +1,31 @@
 import StyledDevImage from './styled/DevImage.styled';
-import AdamMobile from '../assets/image-profile-mobile.webp';
-import AdamTablet from '../assets/image-profile-tablet.webp';
-import AdamDesktop from '../assets/image-profile-desktop.webp';
+import MiguelMobile from '../assets/image-profile-mobile.webp';
+import MiguelTablet from '../assets/image-profile-tablet.webp';
+import MiguelDesktop from '../assets/image-profile-desktop.webp';
 
-const DevImage = () => {
+interface DevImageProps {
+    devName: string;
+}
+
+const DevImage = ({ devName }: DevImageProps) => {
     return (
         <StyledDevImage>
             <source
                 media="(min-width: 1232px)"
-                srcSet={AdamDesktop}
+                srcSet={MiguelDesktop}
                 type="image/webp"
             />
             <source
                 media="(min-width: 768px)"
-                srcSet={AdamTablet}
+                srcSet={MiguelTablet}
                 type="image/webp"
             />
             <source
                 media="(min-width: 320px)"
-                srcSet={AdamMobile}
+                srcSet={MiguelMobile}
                 type="image/webp"
             />
-            <img src={AdamMobile} alt="Adam Keyes" />
+            <img src={MiguelMobile} alt={devName} width="348" height="766" />
         </StyledDevImage>
     );
 };

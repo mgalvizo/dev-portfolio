@@ -6,6 +6,7 @@ const StyledDevImage = styled.picture`
 
     img {
         width: 175px;
+        height: auto;
     }
 
     // 768px

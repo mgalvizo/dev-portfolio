@@ -35,6 +35,9 @@ const StyledProjectItemOverlayContainer = styled.div`
 `;
 
 const StyledProjectItemImageContainer = styled.div`
+    img {
+        height: auto;
+    }
     // 1232px
     @media only screen and (min-width: 77em) {
         position: relative;
