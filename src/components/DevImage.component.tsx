@@ -14,16 +14,22 @@ const DevImage = ({ devName }: DevImageProps) => {
                 media="(min-width: 1232px)"
                 srcSet={MiguelDesktop}
                 type="image/webp"
+                width="890"
+                height="1440"
             />
             <source
                 media="(min-width: 768px)"
                 srcSet={MiguelTablet}
                 type="image/webp"
+                width="646"
+                height="1200"
             />
             <source
                 media="(min-width: 320px)"
                 srcSet={MiguelMobile}
                 type="image/webp"
+                width="348"
+                height="766"
             />
             <img
                 src={MiguelMobile}
