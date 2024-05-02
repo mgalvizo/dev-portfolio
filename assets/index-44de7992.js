@@ -757,7 +757,7 @@ h6 {
             width: 445px;
         }
     }
-`,Zl="/dev-portfolio/assets/image-profile-mobile-223e9c39.webp",Cf="/dev-portfolio/assets/image-profile-tablet-3e2cb5e2.webp",Ef="/dev-portfolio/assets/image-profile-desktop-3ccab638.webp",WS=({devName:e})=>P.jsxs(US,{children:[P.jsx("source",{media:"(min-width: 1232px)",srcSet:Ef,type:"image/webp"}),P.jsx("source",{media:"(min-width: 768px)",srcSet:Cf,type:"image/webp"}),P.jsx("source",{media:"(min-width: 320px)",srcSet:Zl,type:"image/webp"}),P.jsx("img",{src:Zl,srcSet:`${Zl} 320w,
+`,Zl="/dev-portfolio/assets/image-profile-mobile-223e9c39.webp",Cf="/dev-portfolio/assets/image-profile-tablet-3e2cb5e2.webp",Ef="/dev-portfolio/assets/image-profile-desktop-3ccab638.webp",WS=({devName:e})=>P.jsxs(US,{children:[P.jsx("source",{media:"(min-width: 1232px)",srcSet:Ef,type:"image/webp",width:"890",height:"1440"}),P.jsx("source",{media:"(min-width: 768px)",srcSet:Cf,type:"image/webp",width:"646",height:"1200"}),P.jsx("source",{media:"(min-width: 320px)",srcSet:Zl,type:"image/webp",width:"348",height:"766"}),P.jsx("img",{src:Zl,srcSet:`${Zl} 320w,
                 ${Cf} 768w,
                 ${Ef} 1232w`,alt:e,width:"348",height:"766"})]}),BS=Q.button`
     background-color: transparent;
